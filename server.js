@@ -44,8 +44,14 @@ const pool = new Pool({
     port: 5432,
   });
 
-app.post('/register', async (req, res) => {
-    const { name, email, password, confirm_password } = req.body;
+
+// import { sql } from '@vercel/postgres';
+ 
+// const likes = 100;
+// const { rows, fields } =
+//   await sql`SELECT * FROM posts WHERE likes > ${likes} LIMIT 5;`;
+// app.post('/register', async (req, res) => {
+//     const { name, email, password, confirm_password } = req.body;
 
 
     console.log(email)
